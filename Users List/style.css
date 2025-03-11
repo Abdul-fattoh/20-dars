@@ -1,0 +1,19 @@
+body{
+    background-color: grey;
+}
+
+h1{
+    text-align: center;
+}
+
+#usersList{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.userList{
+    background-color: white;
+    padding: 0 20px;
+    border-radius: 10px;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function addsIndex(nums, target) {
+            const arr = []
+
+            for (let i = 0; i - 1 < nums.length; i++) {
+                for (let j = i + 1; j < nums.length; j++) {
+                    if (i != j && nums[i] + nums[j] == target) {
+                        arr.push(i, j)
+                    }
+                }
+            }
+
+            console.log(arr)
+        }
+
+        addsIndex([2, 7, 11, 15], 9)
+        addsIndex([3, 2, 4], 6)
+        addsIndex([3, 3], 6)
+    </script>
+</body>
+</html>

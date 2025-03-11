@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sort(nums) {
+            let count = 0
+
+            for (let i = 0; i < nums.length; i++) {
+                if (nums[i] == 0) {
+                    nums.splice(i, 1)
+
+                    count++
+                }
+            }
+
+            for (let i = 0; i < count; i++) {
+                nums.push(0)
+            }
+
+            console.log(nums)
+        }
+
+        sort([0, 1, 0, 3, 12])
+        sort([0])
+    </script>
+</body>
+</html>
