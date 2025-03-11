@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #212E36;
+}
+
+header{
+    background-color: #EF5350;
+    text-align: center;
+    padding: 20px;
+}
+
+#pokemonList{
+    margin: 0 400px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    text-align: center;
+}
+
+.pokemonImg{
+    width: 200px;
+    background-color: #263238;
+}
+
+h2{
+    color: white;
+}
